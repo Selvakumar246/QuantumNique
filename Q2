@@ -1,0 +1,51 @@
+Question 2
+The 2nd ODI between India and New Zealand at Delhi last week is sure to be a dramatic way for New Zealand to register their first win on tour. India may have lost it that day but that shouldn't stop us from reliving the India-Pakistan clash in the 2003 World Cup.
+
+With the Kiwis batting first putting a target of 242, India struggled hard losing its early wickets. Looking on to the Runs per over statistics of powerplay overs between both the teams, find if the stats of New Zealand was compatible(higher) than India. Given the data, "n" the number of batting powerplay overs in the match and the Runs scored in each of these teams in each of "n" overs.
+
+Input Format:
+First line of the input contains an integer "n" that specifies the number of batting powerplay overs in the match.
+Next n lines contains each the runs scored in each of the n powerplay overs by New Zealand.
+Second n lines contains each the runs scored in each of the n powerplay overs by India.
+
+Output Format:
+Output should print "Yes" if the runs scored by NZ in every over is highest than India else print "No".
+
+Sample Input:
+4
+5
+6
+7
+8
+4
+3
+2
+1
+
+Sample Output:
+Yes
+
+Solution:
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String[] args) {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int []nz=new int[n];
+  int []in=new int[n];
+  for(int i=0;i<n;i++){
+  nz[i]=sc.nextInt();
+}
+  for(int i=0;i<n;i++){
+  in[i]=sc.nextInt();
+}
+  int sum1=0,sum2=0;
+  for(int i=0;i<n;i++){
+  sum1+=nz[i];
+  sum2+=in[i];
+}
+System.out.print((sum1>sum2)?"Yes": "No");
+}
+}
+
