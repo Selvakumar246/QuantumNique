@@ -1,0 +1,62 @@
+Mahendra Singh Dhoni and Kumara Sangakkara, the two best Cricketers have their own reputations. They have common things between them as both: are prominent batsmen, are captains of their teams, and keep wickets.
+
+There are two arrays given, first array for Dhoni and second array is that of Sangakkara's. The arrays contain the statistics like Total number of Wins, number of losses, Number of stumpings and number of catches. Write a program to compare the statistics of Dhoni in the first array with that of Sangakkara. Use deep Equals method.
+
+Input Format:
+First 4 lines of the input are integers that contain the statistics of Dhoni, the Total number of Wins, number of losses, Number of stumpings and number of catches. 
+Next 4 lines of the input are integers that contain the statistics of Sangakkara, the Total number of Wins, number of losses, Number of stumpings and number of catches.
+
+Output Format:
+If the statistics of the players in the both the arrays are same print "Same". Else print "Different".
+If the array size or any of the array elements is negative, print "Invalid Input" and terminate the program.
+Sample Input 1:
+100
+200
+300
+400
+100
+200
+300
+400
+
+Sample Output 1:
+Same
+
+Solution:
+import java.util.Scanner;
+public class Main
+}
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+boolean flag=false;
+int []dh=new int[4];
+int []sa=new int[4];
+for(int i=0; i < 4 ;i++)
+{
+dh[i]=sc.nextInt();
+if(dh[i]<0){
+System.out.print("Invalid Input");
+return;
+}
+}
+for(int i = 0 i < 4 i++){
+sa[i]=sc.nextInt();
+if(sa[i]<0){
+System.out.print("Invalid Input");
+return;
+}
+}
+for(int i=0;i<4;i++){
+if(dh.length<0){
+System.out.print("Invalid Input");
+return;
+}
+if(dh[i]==sa[i]){
+flag=true;
+}
+}
+if(flag)System.out.print("Same");
+else
+System.out.print("Different");
+}
+}
