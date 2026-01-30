@@ -1,0 +1,51 @@
+A bowl-out is used in various forms of limited overs cricket to decide a match that ends in a tie. Team winning bowl out is considered to win the match. Five bowlers from each side deliver one or two balls each at an unguarded wicket (three stumps). If each team has hit the same number of wickets after the first five bowlers per side, the bowling continues and play ends as soon as one competitor is ahead of the others.
+
+Assume a bowl-out situation between two teams A and B. Both the teams bowled out same number of wickets for the first "n" balls. Given the bowl-out sequence of team A for "n" balls, (if a wicket is hit, it is denoted by a "l" or if a bowler misses, it is denoted by a "0"), write a program to print the bowl-out sequence of team B using copyOf method.
+
+Input Format:
+First line of the input is an integer "n" that specifies the number of balls in the bowl-out.
+Next "n" lines contain each either 0 or 1 based on the scoring of the bowl-out.
+
+Output Format:
+Output should display the scoring of bowl-out of team B, line by line.
+If the array size is negative or any of the array elements is other than 0 or 1, print "Invalid Input and terminate the program.
+
+Sample input 1:
+5
+0
+0
+1
+1
+0
+
+Sample Output 1:
+0
+0
+1
+1
+0
+solution:
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+if(n<0){
+System.out.print("Invalid Input");
+return;
+}
+int []arr=new int[n];
+for(int i=0;i<n;i++){
+arr[i]=sc.nextInt();
+if(arr[i]!=0 && arr[i]!=1){{
+System.out.print("Invalid Input");
+return;
+}
+}
+}
+for(i for(int i=0;i<n;i++){
+System.out.println(arr[i]);
+}
+}
+}
